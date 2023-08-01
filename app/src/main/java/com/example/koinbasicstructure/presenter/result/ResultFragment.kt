@@ -1,17 +1,17 @@
-package com.example.koinbasicstructure.ui.notifications
+package com.example.koinbasicstructure.presenter.result
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.support.v4.app.Fragment
-import android.arch.lifecycle.ViewModelProvider
-import com.example.koinbasicstructure.databinding.FragmentNotificationsBinding
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.example.koinbasicstructure.databinding.FragmentResultBinding
 
-class NotificationsFragment : Fragment() {
+class ResultFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentResultBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,13 +24,13 @@ class NotificationsFragment : Fragment() {
     ): View {
         val notificationsViewModel =
             ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
-                NotificationsViewModel::class.java
+                ResultViewModel::class.java
             )
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentResultBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
+        val textView: TextView = binding.textCepLabel
         notificationsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }

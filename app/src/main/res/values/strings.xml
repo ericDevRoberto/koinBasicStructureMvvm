@@ -3,6 +3,14 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!--Home-->
     <string name="home_edit_text">Coloque seu Cep</string>
     <string name="home_button">Verificar CEP</string>
+
+    <!--Result-->
+    <string name="text_cep_label">Cep:</string>
+    <string name="text_city_label">Localidade:</string>
+    <string name="text_neighborhood_label">Bairro:</string>
+    <string name="text_street_label">Rua:</string>
 </resources>
