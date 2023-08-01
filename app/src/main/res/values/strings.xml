@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KoinBasicStructure</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_edit_text">Coloque seu Cep</string>
+    <string name="home_button">Verificar CEP</string>
+</resources>
