@@ -1,13 +1,16 @@
-package com.example.koinbasicstructure
+package com.example.koinbasicstructure.presenter
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import com.example.koinbasicstructure.R
 import com.example.koinbasicstructure.databinding.ActivityMainBinding
+import com.example.koinbasicstructure.di.apiModules
+import com.example.koinbasicstructure.di.domainModules
+import com.example.koinbasicstructure.di.viewModelModule
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
 
 class MainActivity : AppCompatActivity() {
 

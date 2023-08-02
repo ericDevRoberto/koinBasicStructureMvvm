@@ -9,11 +9,23 @@
         android:id="@+id/navigation_home"
         android:name="com.example.koinbasicstructure.presenter.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/home_to_result"
+            app:destination="@+id/navigation_result"
+            />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_result"
         android:name="com.example.koinbasicstructure.presenter.result.ResultFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+
+        <argument
+            android:name="cep_model"
+            app:argType="com.example.koinbasicstructure.domain.models.CepModel"/>
+
+    </fragment>
 </navigation>

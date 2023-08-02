@@ -7,6 +7,7 @@
     <!--Home-->
     <string name="home_edit_text">Coloque seu Cep</string>
     <string name="home_button">Verificar CEP</string>
+    <string name="home_error_api">Solicitação falha</string>
 
     <!--Result-->
     <string name="text_cep_label">Cep:</string>
