@@ -14,4 +14,5 @@
     <string name="text_city_label">Localidade:</string>
     <string name="text_neighborhood_label">Bairro:</string>
     <string name="text_street_label">Rua:</string>
+    <string name="result_button">Voltar</string>
 </resources>

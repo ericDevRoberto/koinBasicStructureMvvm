@@ -27,5 +27,8 @@
             android:name="cep_model"
             app:argType="com.example.koinbasicstructure.domain.models.CepModel"/>
 
+        <action
+            android:id="@+id/result_back_to_home"
+            app:destination="@+id/navigation_home" />
     </fragment>
 </navigation>
